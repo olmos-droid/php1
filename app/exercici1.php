@@ -22,6 +22,6 @@ $B = 5 ;
 
 
     </table>
-</div>
+</div> 
 
 <?php echo '<h1>Hello World</h1><p>Mi primer programa</p>'; ?>
