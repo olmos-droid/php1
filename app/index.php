@@ -63,17 +63,12 @@ $resul
         <h5 class="h5">Pildora 2: Comunicacion entre páginas</h5>
         <form action="reciveuser.php" method="post">
             <label for="nom">Nom</label>
-            <input class="input-group mb-3" type="text" name="nom" /></p>
-            <p>Emddddail: <input type="email" name="email" /></p>
+            <input class="input-group mb-3" type="text" name="nom" />
+            <label for="email">Email</label>
+            <input type="email" name="email" /></p>
             <p><input type="submit" /></p>
         </form>
     </div>
 </body>
 
 </html>
-
-
-
-
-
-<?php echo '<h1>Hello World</h1><p>Mi primer programa</p>'; ?>
