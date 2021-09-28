@@ -61,12 +61,14 @@ $resul
     </div>
     <div class="container">
         <h5 class="h5">Pildora 2: Comunicacion entre páginas</h5>
-        <form action="reciveuser.php" method="post">
-            <label for="nom">Nom</label>
-            <input class="input-group mb-3" type="text" name="nom" />
-            <label for="email">Email</label>
-            <input type="email" name="email" /></p>
-            <p><input type="submit" /></p>
+        <form action="reciveuser.php" method="post" class="w-25">
+            <div>
+                <label for="nom">Nom</label>
+                <input class="input-group mb-3 col-sm-2 col-form-label" type="text" name="nom" />
+                <label for="email">Email</label>
+                <input class="input-group mb-3 col-sm-2 col-form-label" type="email" name="email" />
+            </div>
+            <p><input type="submit" class="btn btn-primary"/></p>
         </form>
     </div>
 </body>
