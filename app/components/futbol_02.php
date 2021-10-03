@@ -49,7 +49,9 @@
                     }
                     ?>
                     <tr>
-                        <td  colspan="4" align = "center" >
+
+                        <td colspan="<?php echo $col+1?>" align="center">
+
                             <input type="hidden" name="ncol" value="">
                             <button type="submit" class="btn btn-dark">Generar taula</button>
                         </td>
