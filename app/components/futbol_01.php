@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div class="h-100 row align-items-center">
+    <div class="h-100 row align-items-center content">
         <form action=" futbol_02.php" method="post">
 
             <table class="table  w-50 table-striped table-dark table-hover ">

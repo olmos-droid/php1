@@ -23,9 +23,9 @@
                         <?php
                         for ($row = 0; $row < $num_match + 1; $row++) {
                             if ($row == 0) {
-                                echo '<th scope="col"><input type="text" name="primera_row[]" value="Jugadors"></th>';
+                                echo '<th scope="col" name="primera_row[]">Jugadors</th>';
                             } else {
-                                echo '<th scope="col"><input type="text" name="primera_row[]" value="Partido', $row, '"></th>';
+                                echo '<th scope="col" name="primera_row[]"> Partido', $row, '</th>';
                             }
                         }
                         ?>
@@ -53,7 +53,7 @@
                         <td colspan="<?php echo $col+1?>" align="center">
 
                             <input type="hidden" name="ncol" value="">
-                            <button type="submit" class="btn btn-dark">Generar taula</button>
+                            <button type="submit" class="btn btn-outline-light">Generar taula</button>
                         </td>
                     </tr>
                 </tbody>

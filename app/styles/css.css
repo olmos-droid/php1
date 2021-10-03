@@ -10,3 +10,9 @@ th {
 table {
   margin: 20px; /* or margin: 0 auto 0 auto */
 }
+content {
+  max-width: auto;
+  margin: auto;
+  background: white;
+  padding: 10px;
+}
