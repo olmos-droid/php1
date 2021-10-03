@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>Dades</title>
 </head>
 
 <body>
@@ -14,9 +15,9 @@
     $num_player = $_POST['player'];
     $num_match = $_POST['match'];
     ?>
-    <form action="generatorTableData.php" method="post">
+    <form action="futbol_03.php" method="post">
         <div>
-            <table class="table table-striped">
+            <table class="table  w-50 table-striped table-dark table-hover ">
                 <thead>
                     <tr>
                         <?php
@@ -47,11 +48,16 @@
                         }
                     }
                     ?>
+                    <tr>
+                        <td  colspan="4" align = "center" >
+                            <input type="hidden" name="ncol" value="">
+                            <button type="submit" class="btn btn-dark">Generar taula</button>
+                        </td>
+                    </tr>
                 </tbody>
             </table>
         </div>
-        <input type="hidden" name="ncol" value="">
-        <button type="submit" class="btn btn-primary">Generar taula</button>
+
     </form>
 </body>
 
