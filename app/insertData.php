@@ -10,52 +10,48 @@
 </head>
 
 <body>
- 
     <?php
     $num_player = $_POST['player'];
     $num_match = $_POST['match'];
-    
     ?>
     <form action="generatorTableData.php" method="post">
-    <div>
-        <table class="table table-striped">
-            <thead>
-                <tr>
+        <div>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <?php
+                        for ($row = 0; $row < $num_match + 1; $row++) {
+                            if ($row == 0) {
+                                echo '<th scope="col"><input type="text" name="primera_row[]" value="Jugadors"></th>';
+                            } else {
+                                echo '<th scope="col"><input type="text" name="primera_row[]" value="Partido', $row, '"></th>';
+                            }
+                        }
+                        ?>
+                    </tr>
+                </thead>
+                <tbody>
                     <?php
-                    for ($row = 0; $row < $num_match + 1; $row++) {
-                        if ($row == 0) {
-                            echo '<th scope="col"><input type="text" name="primera_row[]" value="Jugadors"></th>';
-
-                        } else
-                            
-                            echo '<th scope="col"><input type="text" name="primera_row[]" value="Partido',$row,'"></th>';
-                    }
-                    ?>
-                </tr>
-            </thead>
-            <tbody>
-                <?php
-                for ($row = 0; $row < $num_player ; $row++) {
-                    echo '<tr>';
-                    for ($col = 0; $col < $num_match + 1; $col++) {
-                        
-                        if ($col == 0) {
-                            echo '<th scope="row">';
-                            echo '<input type="text" name="nom_jugadors[]">';
-                            echo '</th>';
-                        } else {
-                            echo '<td>';
-                            echo '<input type="number" name="num_gols[',$row,'][',$col,']">';
-                            echo '</td>';
+                    for ($row = 0; $row < $num_player; $row++) {
+                        echo '<tr>';
+                        for ($col = 0; $col < $num_match + 1; $col++) {
+                            if ($col == 0) {
+                                echo '<th scope="row">';
+                                echo '<input type="text" name="nom_jugadors[]">';
+                                echo '</th>';
+                            } else {
+                                echo '<td>';
+                                echo '<input type="number" name="num_gols[', $row, '][', $col, ']">';
+                                echo '</td>';
+                            }
                         }
                     }
-                }
-                ?>
-            </tbody>
-        </table>
-    </div>
-    <input type="hidden" name="ncol" value="">
-    <button type="submit"class="btn btn-primary">Generar taula</button>
+                    ?>
+                </tbody>
+            </table>
+        </div>
+        <input type="hidden" name="ncol" value="">
+        <button type="submit" class="btn btn-primary">Generar taula</button>
     </form>
 </body>
 
