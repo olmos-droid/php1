@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <link rel="stylesheet" href="css.css">
     <title>Generador de taula</title>
 </head>
 
@@ -14,11 +15,11 @@
     <div class="h-100 row align-items-center content">
         <form action=" futbol_02.php" method="post">
 
-            <table class="table  w-50 table-striped table-dark table-hover ">
+        <table class="table  w-50 table-striped table-dark center">
                 <thead>
                     <tr>
-                        <th></th>
-                        <th colspan="3" align="center">
+                        
+                        <th colspan="2" align="center">
                             Generador de Taula
                         </th>
                     </tr>

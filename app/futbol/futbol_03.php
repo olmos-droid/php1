@@ -18,7 +18,7 @@
     $primera_row = $_POST['primera_row'];
     ?>
     <form action="generatorTableData.php" method="post">
-        <table class="table  w-50 table-striped table-dark table-hover ">
+    <table class="table  w-50 table-striped table-dark center">
             <thead>
                 <tr>
                     <?php
