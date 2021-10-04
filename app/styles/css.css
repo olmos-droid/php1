@@ -7,12 +7,12 @@ th {
   text-align: center;
   vertical-align: middle;
 }
-table {
-  margin: 20px; /* or margin: 0 auto 0 auto */
+body {
+    text-align:center;
+    background-color: rgb(199, 199, 199);
+    padding: 1%;
 }
-content {
-  max-width: auto;
-  margin: auto;
-  background: white;
-  padding: 10px;
-}
+table.center {
+    margin-left:auto; 
+    margin-right:auto;
+  }
