@@ -12,6 +12,6 @@ function start() {
 }
 </script>
 <body onload="start()">
-    fdsfdsf
+    
 </body>
 </html>
