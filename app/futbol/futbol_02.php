@@ -15,13 +15,13 @@
     $num_player = $_POST['player'];
     $num_match = $_POST['match'];
     ?>
-    <form action="futbol_03.php" method="post">
+        <form action="/app/futbol/futbol_03.php" method="post">
         <div>
         <table class="table  w-50 table-striped table-dark center">
                 <thead>
                     <tr>
                         <?php
-                        echo '<th colspan="',$num_match,'" align= "center">Taula Insert Data</th>';
+                        echo '<th colspan="',$num_match+1,'" align= "center">Taula Insert Data</th>';
                         ?>
                     </tr>
                     <tr>

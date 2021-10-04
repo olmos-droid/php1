@@ -19,11 +19,9 @@
     <table class="table  w-50 table-striped table-dark center">
         <thead>
             <tr>
-                <td colspan="3" align="center">
-                    <h4>
-                        Taula product/price
-                    </h4>
-                    </d>
+                
+                <th colspan="3" align= "center">Taula Nom / Producte</th>
+                ?>
             </tr>
             <tr>
                 <th>
@@ -46,7 +44,6 @@
                 } else {
                     echo '<td>Product not inserted</td>';
                 }
-
                 echo '</td><td>', $preu_productes[$i], '</td></tr>';
             }
             ?>

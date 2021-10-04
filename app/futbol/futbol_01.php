@@ -13,12 +13,11 @@
 
 <body>
     <div class="h-100 row align-items-center content">
-        <form action=" futbol_02.php" method="post">
+        <form action="/futbol/futbol_02.php" method="post">
 
         <table class="table  w-50 table-striped table-dark center">
                 <thead>
-                    <tr>
-                        
+                    <tr>  
                         <th colspan="2" align="center">
                             Generador de Taula
                         </th>

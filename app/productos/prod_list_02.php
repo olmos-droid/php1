@@ -18,7 +18,7 @@
         <table class="table  w-50 table-striped table-dark center">
             <thead>
                 <tr>
-                    <th colspan="4">
+                    <th colspan="4" align="center">
                         Products and Price
                     </th>
                 </tr>
